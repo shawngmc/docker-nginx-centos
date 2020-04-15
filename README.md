@@ -14,7 +14,7 @@ In this git repository you will find the docker image definitions for Nginx 1.14
 To use this images you must do as follows:
 
 ```
-# you can use tags latest, latest-centos7, latest-centos6
+# you can use tags latest, latest-centos7
 docker pull shawngmc/docker-nginx-centos:latest
 
 # to run the image just execute

@@ -3,7 +3,8 @@ LABEL maintainer="Shawn McNaughton<shawngmc@gmail.com>"
 
 RUN yum install -y wget openssl sed nginx &&\
     yum -y autoremove &&\
-    yum clean all
+    yum clean all &&\
+    useradd -ms /bin/bash newuser
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY index.html /data/www/index.html
