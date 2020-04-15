@@ -1,6 +1,6 @@
 # docker-nginx-centos
 
-Nginx docker image based on the centos 7 official image and using the latest nginx from the CentOS 7 repo. Based off of Chantex's repo at https://github.com/chantex/docker-nginx-centos
+Nginx docker image based on the centos 7 official image and using the latest nginx from the CentOS 7 repo. Based off of Chentex's repo at https://github.com/chentex/docker-nginx-centos
 
 ## What is Nginx?
 Nginx (pronounced "engine x") is a web server. It can act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.
