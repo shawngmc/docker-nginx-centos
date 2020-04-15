@@ -1,9 +1,8 @@
 FROM centos:centos7
 LABEL maintainer="Shawn McNaughton<shawngmc@gmail.com>"
 
-COPY nginx.repo /etc/yum.repos.d/nginx.repo
-
-RUN yum update -y &&\
+RUN yum install -y epel-release &&\
+    yum update -y &&\
     yum install -y wget openssl sed nginx &&\
     yum -y autoremove &&\
     yum clean all 
