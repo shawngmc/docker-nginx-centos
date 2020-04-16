@@ -1,4 +1,4 @@
-# docker-nginx-centos
+# docker-nginx-centos7
 
 Nginx docker image based on the centos 7 official image and using the latest nginx from the CentOS 7 repo. Based off of Chentex's repo at https://github.com/chentex/docker-nginx-centos
 
@@ -8,13 +8,13 @@ Nginx (pronounced "engine x") is a web server. It can act as a reverse proxy ser
 See: [Nginx](http://Nginx.org/)
 
 ## What is inside of this repo?
-In this git repository you will find the docker image definitions for Nginx 1.14.0 in centos 7.
+In this git repository you will find the docker image definitions for Nginx 1.16.x in centos 7.
 
 ## How do I use this images?
 To use this images you must do as follows:
 
 ```
-# you can use tags latest, latest-centos7
+# latest tag is the only generally populated one, as there should be only minor patch differences between versions 
 docker pull shawngmc/docker-nginx-centos:latest
 
 # to run the image just execute
@@ -49,8 +49,6 @@ Clone this repo
 Go to the folder in your terminal and type this:
 
 ```
-# cd <desired-version>
-cd centos7
 # Then build the new image
 docker build -f Dockerfile .
 ```
